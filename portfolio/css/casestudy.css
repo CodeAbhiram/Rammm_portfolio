@@ -1,0 +1,519 @@
+/* ==========================================================
+   RESET
+========================================================== */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#f5f3ee;
+  color:#111;
+
+  font-family:'Montserrat',sans-serif;
+
+  overflow-x:hidden;
+
+  -webkit-font-smoothing:antialiased;
+}
+
+/* ==========================================================
+   GLOBAL
+========================================================== */
+
+img{
+  width:100%;
+  display:block;
+}
+
+.case-study{
+  width:min(1500px,92%);
+  margin:0 auto;
+
+  padding-top:80px;
+  padding-bottom:160px;
+}
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.case-hero{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+
+  text-align:center;
+
+  margin-bottom:180px;
+}
+.hero-main-content{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+    max-width: 780px;
+}
+
+.hero-architecture{
+  width:100%;
+
+  margin-bottom:80px;
+
+  border-radius:34px;
+
+  overflow:hidden;
+
+  position:relative;
+
+  background:white;
+
+  border:1px solid rgba(0,0,0,.06);
+
+  box-shadow:
+  0 20px 80px rgba(0,0,0,.06);
+}
+
+.hero-architecture img{
+  object-fit:cover;
+
+  transition:transform .7s ease;
+}
+
+.hero-architecture:hover img{
+  transform:scale(1.015);
+}
+
+.case-kicker{
+  font-size:.82rem;
+
+  text-transform:uppercase;
+
+  letter-spacing:.22em;
+
+  color:#8d8d8d;
+
+  margin-bottom:26px;
+}
+
+.case-title{
+  font-size:clamp(4rem,8vw,8rem);
+
+  line-height:.9;
+
+  letter-spacing:-.09em;
+
+  font-weight:300;
+
+  max-width:1100px;
+
+  margin:0 auto 34px;
+}
+
+.case-title span{
+  display:inline-block;
+
+  margin-top:10px;
+
+  padding:.06em .42em;
+
+  border:1.5px solid #111;
+
+  border-radius:999px;
+}
+
+.case-subtitle{
+  max-width: 720px;
+  margin-top: 28px;
+  margin-left: 0;
+  margin-bottom: 28px;
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  line-height: 1.8;
+  
+  color: rgba(0,0,0,0.72);
+}
+
+/* ==========================================================
+   SECTION GRID
+========================================================== */
+
+.case-section{
+  display:grid;
+
+  grid-template-columns:260px 1fr;
+
+  gap:clamp(60px,10vw,180px);
+
+  padding:110px 0;
+
+  border-top:1px solid rgba(0,0,0,.07);
+}
+
+/* ==========================================================
+   LEFT
+========================================================== */
+
+.case-left{
+  align-self:start;
+}
+
+.case-left h2{
+  font-size:2.2rem;
+
+  line-height:1;
+
+  font-weight:400;
+
+  letter-spacing:-.06em;
+}
+
+/* ==========================================================
+   RIGHT
+========================================================== */
+
+.case-right{
+  max-width:900px;
+}
+
+.case-right h3{
+  font-size:2rem;
+
+  line-height:1.05;
+
+  letter-spacing:-.05em;
+
+  font-weight:400;
+
+  margin-bottom:30px;
+}
+
+.case-right p{
+  font-size:1.05rem;
+
+  line-height:2;
+
+  color:#505050;
+
+  margin-bottom:34px;
+}
+
+/* ==========================================================
+   LISTS
+========================================================== */
+
+.case-right ul{
+  list-style:none;
+
+  margin:40px 0;
+}
+
+.case-right li{
+  position:relative;
+
+  padding-left:30px;
+
+  margin-bottom:20px;
+
+  font-size:1.02rem;
+
+  line-height:1.9;
+
+  color:#4b4b4b;
+}
+
+.case-right li::before{
+  content:'';
+
+  position:absolute;
+
+  left:0;
+  top:13px;
+
+  width:8px;
+  height:8px;
+
+  border-radius:50%;
+
+  background:#111;
+}
+
+/* ==========================================================
+   QUOTE
+========================================================== */
+
+.case-quote{
+  margin:70px 0;
+
+  padding-left:34px;
+
+  border-left:2px solid #111;
+}
+
+.case-quote p{
+  font-size:clamp(1.8rem,2.3vw,2.5rem);
+
+  line-height:1.35;
+
+  letter-spacing:-.05em;
+
+  color:#111;
+}
+
+/* ==========================================================
+   ARCHITECTURE IMAGE
+========================================================== */
+
+.case-architecture-image{
+  margin-top:50px;
+
+  overflow:hidden;
+
+  border-radius:26px;
+
+  background:white;
+
+  border:1px solid rgba(0,0,0,.06);
+
+  box-shadow:
+  0 10px 40px rgba(0,0,0,.04);
+}
+
+.case-architecture-image img{
+  object-fit:cover;
+
+  transition:transform .6s ease;
+}
+
+.case-architecture-image:hover img{
+  transform:scale(1.01);
+}
+
+/* ==========================================================
+   HIGHLIGHT
+========================================================== */
+
+.case-highlight{
+  background:#111;
+
+  padding:54px;
+
+  border-radius:34px;
+
+  margin-top:70px;
+
+  box-shadow:
+  0 20px 60px rgba(0,0,0,.12);
+}
+
+.case-highlight h3{
+  color:white;
+}
+
+.case-highlight p,
+.case-highlight li{
+  color:rgba(255,255,255,.74);
+}
+
+/* ==========================================================
+   FINAL
+========================================================== */
+
+.case-final{
+  padding-top:180px;
+
+  text-align:center;
+}
+
+.case-final h2{
+  font-size:clamp(3.2rem,7vw,6.5rem);
+
+  line-height:.92;
+
+  letter-spacing:-.08em;
+
+  font-weight:300;
+
+  max-width:1100px;
+
+  margin:0 auto 46px;
+}
+
+.case-final p{
+  max-width:780px;
+
+  margin:0 auto;
+
+  font-size:1.08rem;
+
+  line-height:2;
+
+  color:#555;
+}
+
+/* ==========================================================
+   REVEAL
+========================================================== */
+
+.case-reveal{
+  opacity:0;
+
+  transform:translateY(35px);
+
+  transition:
+    opacity .8s cubic-bezier(.2,.8,.2,1),
+    transform .8s cubic-bezier(.2,.8,.2,1);
+}
+
+.case-reveal.active{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+/* ==========================================================
+   RESPONSIVE — FIXED & IMPROVED
+========================================================== */
+
+@media (max-width: 1100px) {
+
+  .case-section {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 90px 0;
+  }
+
+  .case-left {
+    opacity: 0.9;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  /* ---------------- GLOBAL SPACING ---------------- */
+
+  .case-study {
+    width: 92%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  .case-section {
+    padding: 70px 0;
+    gap: 36px;
+  }
+
+  /* ---------------- HERO ---------------- */
+
+  .case-hero {
+    margin-bottom: 90px;
+  }
+
+  .hero-architecture {
+    margin-bottom: 40px;
+    border-radius: 20px;
+  }
+
+  .hero-main-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .case-kicker {
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+  }
+
+  .case-title {
+    font-size: clamp(2.4rem, 10vw, 4.5rem);
+    line-height: 1;
+    letter-spacing: -0.05em;
+  }
+
+  .case-subtitle {
+    font-size: 0.98rem;
+    line-height: 1.8;
+    margin: 18px auto;
+  }
+
+  /* ---------------- SECTION HEADINGS ---------------- */
+
+  .case-left h2 {
+    font-size: 1.6rem;
+    text-align: left;
+  }
+
+  .case-right h3 {
+    font-size: 1.35rem;
+    margin-bottom: 20px;
+  }
+
+  .case-right p {
+    font-size: 1rem;
+    line-height: 1.85;
+    margin-bottom: 26px;
+  }
+
+  /* ---------------- LISTS ---------------- */
+
+  .case-right li {
+    font-size: 0.98rem;
+    line-height: 1.7;
+    padding-left: 26px;
+  }
+
+  .case-right li::before {
+    top: 10px;
+    width: 6px;
+    height: 6px;
+  }
+
+  /* ---------------- QUOTE ---------------- */
+
+  .case-quote {
+    margin: 50px 0;
+    padding-left: 18px;
+  }
+
+  .case-quote p {
+    font-size: clamp(1.3rem, 5vw, 1.8rem);
+    line-height: 1.4;
+  }
+
+  /* ---------------- HIGHLIGHT ---------------- */
+
+  .case-highlight {
+    padding: 28px;
+    border-radius: 22px;
+  }
+
+  .case-highlight p,
+  .case-highlight li {
+    font-size: 0.98rem;
+  }
+
+  /* ---------------- FINAL SECTION ---------------- */
+
+  .case-final {
+    padding-top: 110px;
+  }
+
+  .case-final h2 {
+    font-size: clamp(2.2rem, 9vw, 4.5rem);
+    margin-bottom: 28px;
+  }
+
+  .case-final p {
+    font-size: 1rem;
+    line-height: 1.85;
+  }
+
+}

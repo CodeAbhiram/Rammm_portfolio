@@ -1661,9 +1661,9 @@ body {
 .story-side-block li{
   font-size: 0.78rem;
   line-height: 1.8;
-  color: var(--text-muted);
+  color: black;
   letter-spacing: -0.01em;
-  font-weight: 100;
+  font-weight:300;
 }
 
 
@@ -2317,7 +2317,12 @@ body {
     gap: 40px;
     padding-top: 100px;
   }
-
+  .story-right-column{
+    order:1;
+  }
+  .story-left-column{
+    order: 2;
+  }
   .story-left-column,
   .story-right-column {
     width: 100%;
